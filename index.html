@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>vue bootstrap grid</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/vue-bootstrap-grid.css">
+    <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/vue.js"></script>
+    <script type="text/javascript" src="js/vue-bootstrap-grid.js"></script>
+</head>
+
+<body>
+    <div class="container body-content">
+        <div id="example" class="form-group">
+            <vb-grid title="Page Heading" @page-changed="pageChanged" :url="url" :col-models="colModels" :page-size="pageSize" :page-size-list="pageSizeList"></vb-grid>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
